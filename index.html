@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  class="dark">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,11 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <!-- text -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <!-- text! -->
   <script src="script.js"></script>
   <style>
     .background-image {
@@ -20,28 +25,44 @@
       color: white;
       text-align: center;
     }
+
     @media screen and (max-width: 640px) {
       .max-sm\:mx-0 {
         margin-left: 0rem;
         margin-right: 0rem;
       }
+
       .max-text-3xl {
         font-size: 1.875rem;
       }
+
+      .max-text-mxl {
+        font-size: 1.4rem;
+      }
+
       .max-text-xl {
         font-size: .875rem;
       }
-      
+
     }
+
     .dark {
       background-color: black;
       color: white;
     }
     
+.inconsolata-new {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
   </style>
 </head>
 
-<body>
+<body class="inconsolata-new">
   <div>
     <button onclick="toggleDarkMode()" class="f_buttons border-white p-2 rounded-full absolute bottom-2 left-2">
       <i class="bi bi-moon-stars-fill"></i>
@@ -52,8 +73,8 @@
     </button>
   </div>
 
-  <div class="h-screen w-screen grid gap-5">
-    <main class="p-10 rounded-lg">
+  <div class="h-screen w-screen grid gap-4">
+    <main class="p-10 rounded-lg overflow-x-auto">
       <!-- sm:bg-red-900 md:bg-blue-700 lg:bg-yellow-900 -->
       <div class="background-image max-sm:mx-0 mx-10 mb-20 mt-5 p-5 rounded-lg">
         <div class="flex justify-center items-center overflow-hidden  rounded-full -mb-20 mx-auto w-40 h-40">
@@ -66,7 +87,7 @@
           Sayan Basani
         </h2>
         <div class="max-text-xl text-xl grid gap-2">
-          <span class="whitespace-nowrap">
+          <span class="whitespace-nowra">
             Full Stack Developer | Web Developer | Programmer
           </span>
           <span class="">
@@ -80,7 +101,23 @@
           </span>
         </div>
       </div>
-      <div class="About-Me border-white border-2">hello</div>
+
+      <div class="About-Me border-white mt-5">
+        <h1 class="font-sembold max-text-mxl text-2xl text-gray-400">About Me:</h1>
+        <div class="grid gap-2">
+          <span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Passionate about software development with expertise in Python, Django, React, JavaScript, Tailwind CSS, and C. I enjoy building scalable and efficient applications, specializing in web development, AI-powered assistants, and management systems, with a focus on both front-end and back-end technologies.
+          </span>
+          <span>
+            During my internships, I worked on full-stack development, integrating Django with Firebase and MySQL, and enhancing user experiences with modern web technologies. Always eager to contribute to innovative projects and expand my technical expertise.
+          </span>
+          <span>
+            Currently seeking internship and job opportunities to apply my skills and collaborate with industry professionals.
+          </span>
+        </div>
+        
+      </div>
     </main>
 
 
@@ -88,4 +125,3 @@
 </body>
 
 </html>
-
