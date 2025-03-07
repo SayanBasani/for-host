@@ -1,21 +1,24 @@
-// const light_dark = document.getElementById('light_dark');
-// light_dark.addEventListener('click', () => {
-//   const light_dark = document.getElementById('main_div');  
-//   document.body.classList.toggle('dark');
-// });
-function toggleDarkMode() {
-  document.documentElement.classList.toggle('dark');
-  console.log(document.documentElement.classList);
-  if (document.documentElement.classList.contains('dark')) {
-    localStorage.setItem('dark-mode', 'enabled');
-    console.log("dark mode enabled");
-    document.querySelectorAll('button').forEach(button => {
-      button.classList.add('dark');
+  function toggleDarkMode() {
+    const htmlElement = document.documentElement;
+    const buttons = document.querySelectorAll('.f_buttons');
+
+    htmlElement.classList.toggle('dark');
+    buttons.forEach(button => {
+      const icon = button.querySelector('i');
+      if (htmlElement.classList.contains('dark')) {
+        localStorage.setItem('dark-mode', 'enabled');
+        button.classList.add('dark_button');
+        if (icon.classList.contains('bi-moon-stars-fill')) {
+          icon.classList.remove('bi-moon-stars-fill');
+          icon.classList.add('bi-brightness-high-fill');
+        }
+      } else {
+        localStorage.setItem('dark-mode', 'disabled');
+        button.classList.remove('dark_button');
+        if (icon.classList.contains('bi-brightness-high-fill')) {
+          icon.classList.remove('bi-brightness-high-fill');
+          icon.classList.add('bi-moon-stars-fill');
+        }
+      }
     });
-  } else {
-    localStorage.setItem('dark-mode', 'disabled');
-    console.log("dark mode disabled");
   }
-}
-
-
