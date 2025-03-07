@@ -1,0 +1,42 @@
+.background-image {
+  background-image: url("img.png");
+  background-size: cover;
+  background-position: center;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .max-sm\:mx-0 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .max-text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .max-text-mxl {
+    font-size: 1.4rem;
+  }
+
+  .max-text-xl {
+    font-size: 0.875rem;
+  }
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.inconsolata-new {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
