@@ -18,19 +18,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="inconsolata-new">
+<body class="inconsolata-new" >
   <div>
     <button onclick="toggleDarkMode()" class="f_buttons border-white p-2 rounded-full absolute bottom-2 left-2">
       <i class="bi bi-moon-stars-fill"></i>
       <!-- <i class="bi bi-brightness-high-fill"></i>   -->
     </button>
-    <button class="border-white p-2 rounded-lg absolute top-2 right-2">
+    <button onclick="side_bar()" class="side_bar_btn border-white p-2 rounded-lg absolute top-2 right-3">
       <i class="bi bi-list"></i>
     </button>
+    <div class="hidden side-bar text-white p-5 absolute top-7 right-7 w-60 rounded-lg">
+      <h3 class="text-xl font-bold text-gray-400">Options</h3>
+      <a href="" class=" border flex justify-center items-center p-2 rounded-lg mt-2 ">
+        home
+      </a>
+      <a href="" class=" border flex justify-center items-center p-2 rounded-lg mt-2 ">
+        Page 1
+      </a>
+    </div>
   </div>
 
   <div class="h-screen w-screen grid gap-4">
-    <main class="p-10 rounded-lg overflow-x-auto">
+    <main class="p-10 rounded-lg overflow-x-auto grid gap-4">
       <!-- sm:bg-red-900 md:bg-blue-700 lg:bg-yellow-900 -->
       <div class="background-image max-sm:mx-0 mx-10 mb-20 mt-5 p-5 rounded-lg">
         <div class="flex justify-center items-center overflow-hidden  rounded-full -mb-20 mx-auto w-40 h-40">
@@ -52,7 +61,7 @@
               sayan.basani2004@gmail.com
             </a>
           </span>
-          <span class="">
+          <span class="hidden">
             Address : Akrasal, Bankura, West Bengal
           </span>
         </div>
@@ -67,18 +76,33 @@
             C. I enjoy building scalable and efficient applications, specializing in web development, AI-powered
             assistants, and management systems, with a focus on both front-end and back-end technologies.
           </span>
-          <span>
+          <span class="hidden">
             During my internships, I worked on full-stack development, integrating Django with Firebase and MySQL, and
             enhancing user experiences with modern web technologies. Always eager to contribute to innovative projects
             and expand my technical expertise.
           </span>
-          <span>
+          <span class="hidden">
             Currently seeking internship and job opportunities to apply my skills and collaborate with industry
             professionals.
           </span>
         </div>
 
       </div>
+      <div class="">
+        <h1 class="relative  font-sembold max-text-mxl text-2xl text-gray-400 mb-5 ">Projects:</h1>
+        
+        <div class="borde border-white px-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 rounded-lg">
+        
+          <div class="mx-auto bg-blue-700 w-min px-5 py-3 rounded-lg transition-transform duration-300 transform hover:scale-110">
+            Ecomers
+          </div>
+          <div class="mx-auto bg-blue-700 w-min px-5 py-3 rounded-lg transition-transform duration-300 transform hover:scale-110">
+            Portfolio
+          </div>
+          
+        </div>
+      </div>
+      
       <footer class="bg-gray-900 text-white py-6 mt-10">
         <div class="container mx-auto flex flex-col items-center justify-center gap-4">
           <!-- Social Media Links -->

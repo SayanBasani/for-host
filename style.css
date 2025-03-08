@@ -40,3 +40,16 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+/*  */
+.side-bar {
+  background-color: rgb(7, 1, 15);
+  color: white;
+}
+
+.menu_bright {
+/* .side-bar { */
+  background-color: rgb(237, 239, 245);
+  color: rgb(5, 5, 5);
+  /* border: 1px solid rgb(5, 5, 5); */
+}
