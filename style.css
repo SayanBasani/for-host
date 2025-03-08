@@ -45,6 +45,7 @@
 .side-bar {
   background-color: rgb(7, 1, 15);
   color: white;
+  border: 1px solid white;
 }
 
 .menu_bright {
